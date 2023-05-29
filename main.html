@@ -1,16 +1,36 @@
-<!DOCTYPE html>
+<form>
+  <label for="name">Name*</label>
+  <input type="text" id="name" required>
 
-<html>
+  <label for="email">Email*</label>
+  <input type="email" id="email" required>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <label for="gender">Gender*</label><br>
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female" required>
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other" required>
+  <label for="other">Other</label><br>
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <label for="laptop-brand">Laptop Brand*</label>
+  <select id="laptop-brand" required>
+    <option value="Apple">Apple</option>
+    <option value="Asus">Asus</option>
+    <option value="HP">HP</option>
+  </select>
 
-</body>
+  <label for="age">Age*</label>
+  <input type="number" id="age" required>
 
-</html>
+  <label for="dob">Date of Birth*</label>
+  <input type="date" id="dob" required>
+
+  <label for="password">Password*</label>
+  <input type="password" id="password" required>
+
+  <label for="portfolio">Portfolio URL</label>
+  <input type="url" id="portfolio">
+
+  <input type="submit" value="Submit">
+</form>
